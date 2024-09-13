@@ -1,0 +1,7 @@
+HA HA HA HA HAA
+Fibonacci Of Input:  34
+Fibonacci of Input:  34
+Factorial of Input:  120
+Reverse:  [1, 2, 1]
+Subsets:  [[], [1], [2], [1, 2], [1], [1, 1], [2, 1], [1, 2, 1]]
+Is palindrome: true

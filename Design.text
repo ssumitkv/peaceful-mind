@@ -1,0 +1,34 @@
+Design Music strimming:
+
+Functional Requirement:
+1. 
+
+
+Use Cases:
+1. Finding and playing Musics
+
+Numbers:
+1. How many users are you thinking aobut. : 1 Billion Users
+2. Number of Songs: 100 million
+
+1 Song = 5mb
+100 million songs = 5 * 1000,00,000 = .5 Peta Byte
+3 replica = .5 * 3= 1.5 PB
+
+1 Meta data= 
+100 Byte per songs  = 100Byte * 100M
+10GB >>> 100GB
+
+User Meta data
+1 kb per user
+1 billion ~ 1 TB
+
+Traffic:
+
+
+
+
+
+Draw all componenets:
+Load Balancer
+
