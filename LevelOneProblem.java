@@ -6,19 +6,23 @@ import java.util.List;
 
 public class LevelOneProblem {
     public static void main(String[] args) {
-        System.out.println ("HA HA HA HA HAA");
-        List<Integer> results = Arrays.asList(-1, -1, -1, -1, -1, -1, -1, -1, -1, -1);
-        int[] input = {1, 2,1};
-        System.out.println("Fibonacci Of Input:  "+findFibonacci(9, results));
-        System.out.println("Fibonacci of Input:  "+findFibonacci(9));
+    //     System.out.println ("HA HA HA HA HAA");
+    //     List<Integer> results = Arrays.asList(-1, -1, -1, -1, -1, -1, -1, -1, -1, -1);
+        int[] input = {1, 2,23};
+    //     System.out.println("Fibonacci Of Input:  "+findFibonacci(9, results));
+    //     System.out.println("Fibonacci of Input:  "+findFibonacci(9));
 
-        System.out.println("Factorial of Input:  "+calculateFactorial(5));
-        int[] reversedArray = reverseArray(input, 0, input.length-1);
+    //     System.out.println("Factorial of Input:  "+calculateFactorial(5));
+    //     int[] reversedArray = reverseArray(input, 0, input.length-1);
 
-        System.out.println("Reverse:  "+Arrays.toString(reversedArray));
-        System.out.println("Subsets:  "+subsets(input));
+    //     System.out.println("Reverse:  "+Arrays.toString(reversedArray));
+    //     System.out.println("Subsets:  "+subsets(input));
+        System.out.println("Powerset Subsets:  "+ powerSet(input) );
+        // powerSet(input);
 
-        System.out.println("Is palindrome: "+isPalindrome(input, 0, input.length-1));
+        
+
+        // System.out.println("Is palindrome: "+isPalindrome(input, 0, input.length-1));
     }
 
     private static Boolean isPalindrome(int[] input, int start, int end) {
@@ -94,4 +98,28 @@ public class LevelOneProblem {
         }
         return result;
     }
+
+
+    
+    public static List<List<Integer>> powerSet(int[] nums) {
+        List<List<Integer>> results = new ArrayList<>();
+     
+        int n = nums.length;
+        int total = 1 << n;
+        for(int i = 0; i < total; i++) {
+            List<Integer> temp = new ArrayList<>();
+            for(int j =0; j < n; j++) {
+                if((i & (1<<j)) != 0) {
+                    System.out.print(nums[j]);
+                    temp.add(nums[j]);
+                }
+            }
+            System.out.println();
+            results.add(temp);
+
+        }
+        return results;
+
+    }
+
 }
