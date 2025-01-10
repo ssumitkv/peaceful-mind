@@ -1,3 +1,4 @@
+package test.others;
 /*
 Create a Singleton class called "PaymentProcessor" that manages concurrent transactions. The Payment Processor should use 
 ConcurrentHashMap to store payment records.

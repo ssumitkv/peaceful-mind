@@ -1,3 +1,4 @@
+package easy;
 public class LargestSumOfSubArray {
 
 
